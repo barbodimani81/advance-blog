@@ -1,4 +1,8 @@
 from django.db import models
+from django.contrib.auth import get_user_model
+
+# getting user model object
+User = get_user_model()
 
 class Post(models.Model):
     """
